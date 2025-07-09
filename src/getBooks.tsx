@@ -23,7 +23,7 @@ function GetBooks() {
     return (
         <>
             <div>
-                My books are:
+                <h1>My books are:</h1>
                 <table>
                     <thead>
                         <tr>
@@ -46,6 +46,6 @@ function GetBooks() {
         </>
 
     )
-};
+}
 
 export default GetBooks;

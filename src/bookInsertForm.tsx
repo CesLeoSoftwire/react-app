@@ -29,22 +29,25 @@ const BookInsertForm = () => {
     };
 
     return (
-        <form className="form-container"
-              onSubmit={handleSubmit}>
-            <input type="text" name="title"
-                   placeholder="Enter the title"
-                   value={Data.title}
-                   onChange={handleChange} />
-            <input type="text" name="author"
-                   placeholder="Enter the author"
-                   value={Data.author}
-                   onChange={handleChange} />
-            <input type="text" name="isbn"
-                   placeholder="Enter the isbn"
-                   value={Data.isbn}
-                   onChange={handleChange} />
-            <button type="submit">Submit</button>
-        </form>
+        <div>
+            <h1>Insert new book:</h1>
+            <form className="form-container"
+                  onSubmit={handleSubmit}>
+                <input type="text" name="title"
+                       placeholder="Enter the title"
+                       value={Data.title}
+                       onChange={handleChange} />
+                <input type="text" name="author"
+                       placeholder="Enter the author"
+                       value={Data.author}
+                       onChange={handleChange} />
+                <input type="text" name="isbn"
+                       placeholder="Enter the isbn"
+                       value={Data.isbn}
+                       onChange={handleChange} />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     );
 };
 
